@@ -13,5 +13,18 @@
 #   rules:
 #     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
 
-test:
-  script: go test -v ./test
+# test:
+#   script: go test -v ./test
+
+stages:
+  - test
+
+test_job:
+  stage: test
+  tags:
+    - linux
+    - sum
+    - test
+  script:
+    - echo "Testing..."
+    - go test -v ./test
