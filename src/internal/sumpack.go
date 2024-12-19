@@ -20,3 +20,5 @@ func ResultOfValues(valOne, valTwo float64) expressionSum {
 	expr.Result = SumOfValues(expr.ValueOne, expr.ValueTwo)
 	return expr
 }
+
+// test
