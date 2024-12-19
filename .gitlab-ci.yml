@@ -22,9 +22,7 @@ stages:
 test_job:
   stage: test
   tags:
-    - linux
-    - sum
-    - test
+    -  gitlab-org
   script:
     - echo "Testing..."
     - go test -v ./test
