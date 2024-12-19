@@ -15,4 +15,4 @@ jobs:
           go-version: '1.20' # Замените на нужную версию Go
 
       - name: Run tests
-        run: go test -v ./src/test
+        run: cd src && go test -v ./test
